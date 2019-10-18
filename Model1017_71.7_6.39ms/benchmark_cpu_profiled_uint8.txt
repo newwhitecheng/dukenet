@@ -1,0 +1,121 @@
+STARTING!
+Min num runs: [50]
+Min runs duration (seconds): [1]
+Max runs duration (seconds): [150]
+Inter-run delay (seconds): [-1]
+Num threads: [1]
+Benchmark name: []
+Output prefix: []
+Min warmup runs: [1]
+Min warmup runs duration (seconds): [0.5]
+Graph: [/data/local/tmp/swiftnet-uint8.lite]
+Input layers: []
+Input shapes: []
+Use nnapi : [0]
+Use legacy nnapi : [0]
+Use gpu : [0]
+Allow lower precision in gpu : [1]
+Preferred GL object type in gpu : [0]
+Allow fp16 : [0]
+Require full delegation : [0]
+Enable op profiling: [1]
+Max profiling buffer entries: [1024]
+Loaded model /data/local/tmp/swiftnet-uint8.lite
+resolved reporter
+Initialized session in 0.85ms
+Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+count=11 first=55287 curr=47125 min=47030 max=55287 avg=47883 std=2343
+
+Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+count=50 first=47134 curr=47066 min=46998 max=47313 avg=47140.4 std=71
+
+Average inference timings in us: Warmup: 47883, Init: 850, no stats: 47140.4
+============================== Run Order ==============================
+	             [node type]	          [start]	  [first]	 [avg ms]	     [%]	  [cdf%]	  [mem KB]	[times called]	[Name]
+	                 CONV_2D	            0.000	    3.522	    3.519	  7.466%	  7.466%	     0.000	        1	[conv_pre1/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	            3.519	    2.621	    2.626	  5.572%	 13.038%	     0.000	        1	[bottleneck_1_1/dw/bn/bn/activation]
+	                 CONV_2D	            6.145	    2.048	    2.057	  4.366%	 17.404%	     0.000	        1	[bottleneck_1_1/projection/conv/add_fold]
+	                 CONV_2D	            8.203	    6.123	    6.077	 12.896%	 30.300%	     0.000	        1	[bottleneck_2_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           14.281	    0.890	    0.899	  1.908%	 32.208%	     0.000	        1	[bottleneck_2_1/dw/bn/bn/activation]
+	                 CONV_2D	           15.180	    0.902	    0.909	  1.928%	 34.136%	     0.000	        1	[bottleneck_2_1/projection/conv/add_fold]
+	                 CONV_2D	           16.089	    1.695	    1.703	  3.613%	 37.750%	     0.000	        1	[bottleneck_3_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           17.792	    1.088	    1.093	  2.320%	 40.070%	     0.000	        1	[bottleneck_3_1/dw/bn/bn/activation]
+	                 CONV_2D	           18.886	    0.993	    0.990	  2.100%	 42.170%	     0.000	        1	[bottleneck_3_1/projection/conv/add_fold]
+	                     ADD	           19.876	    0.167	    0.165	  0.350%	 42.520%	     0.000	        1	[bottleneck_3_1/residual/add]
+	                 CONV_2D	           20.041	    1.705	    1.702	  3.612%	 46.132%	     0.000	        1	[bottleneck_4_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           21.743	    0.280	    0.283	  0.600%	 46.732%	     0.000	        1	[bottleneck_4_1/dw/bn/bn/activation]
+	                 CONV_2D	           22.027	    0.414	    0.416	  0.884%	 47.616%	     0.000	        1	[bottleneck_4_1/projection/conv/add_fold]
+	                 CONV_2D	           22.443	    0.902	    0.905	  1.920%	 49.536%	     0.000	        1	[bottleneck_5_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           23.348	    0.376	    0.378	  0.803%	 50.338%	     0.000	        1	[bottleneck_5_1/dw/bn/bn/activation]
+	                 CONV_2D	           23.727	    0.551	    0.552	  1.171%	 51.509%	     0.000	        1	[bottleneck_5_1/projection/conv/add_fold]
+	                     ADD	           24.279	    0.072	    0.074	  0.157%	 51.666%	     0.000	        1	[bottleneck_5_1/residual/add]
+	                 CONV_2D	           24.353	    0.901	    0.904	  1.918%	 53.585%	     0.000	        1	[bottleneck_6_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           25.257	    0.376	    0.377	  0.801%	 54.386%	     0.000	        1	[bottleneck_6_1/dw/bn/bn/activation]
+	                 CONV_2D	           25.635	    0.553	    0.554	  1.176%	 55.562%	     0.000	        1	[bottleneck_6_1/projection/conv/add_fold]
+	                     ADD	           26.189	    0.072	    0.073	  0.156%	 55.717%	     0.000	        1	[bottleneck_6_1/residual/add]
+	                 CONV_2D	           26.263	    1.823	    1.823	  3.869%	 59.587%	     0.000	        1	[bottleneck_7_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           28.087	    0.183	    0.183	  0.388%	 59.975%	     0.000	        1	[bottleneck_7_1/dw/bn/bn/activation]
+	                 CONV_2D	           28.269	    0.435	    0.436	  0.925%	 60.899%	     0.000	        1	[bottleneck_7_1/projection/conv/add_fold]
+	                 CONV_2D	           28.705	    0.475	    0.482	  1.022%	 61.922%	     0.000	        1	[bottleneck_8_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           29.187	    0.148	    0.148	  0.315%	 62.236%	     0.000	        1	[bottleneck_8_1/dw/bn/bn/activation]
+	                 CONV_2D	           29.336	    0.390	    0.393	  0.834%	 63.071%	     0.000	        1	[bottleneck_8_1/projection/conv/add_fold]
+	                     ADD	           29.729	    0.036	    0.036	  0.077%	 63.148%	     0.000	        1	[bottleneck_8_1/residual/add]
+	                 CONV_2D	           29.766	    0.470	    0.439	  0.932%	 64.080%	     0.000	        1	[bottleneck_9_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           30.205	    0.140	    0.135	  0.287%	 64.367%	     0.000	        1	[bottleneck_9_1/dw/bn/bn/activation]
+	                 CONV_2D	           30.341	    0.354	    0.359	  0.762%	 65.130%	     0.000	        1	[bottleneck_9_1/projection/conv/add_fold]
+	                     ADD	           30.701	    0.037	    0.036	  0.077%	 65.206%	     0.000	        1	[bottleneck_9_1/residual/add]
+	                 CONV_2D	           30.737	    0.435	    0.442	  0.938%	 66.145%	     0.000	        1	[bottleneck_10_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           31.179	    0.135	    0.135	  0.286%	 66.430%	     0.000	        1	[bottleneck_10_1/dw/bn/bn/activation]
+	                 CONV_2D	           31.314	    0.365	    0.361	  0.765%	 67.196%	     0.000	        1	[bottleneck_10_1/projection/conv/add_fold]
+	                     ADD	           31.675	    0.036	    0.036	  0.077%	 67.273%	     0.000	        1	[bottleneck_10_1/residual/add]
+	                 CONV_2D	           31.711	    1.128	    1.136	  2.411%	 69.684%	     0.000	        1	[bottleneck_11_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           32.848	    0.340	    0.344	  0.731%	 70.414%	     0.000	        1	[bottleneck_11_1/dw/bn/bn/activation]
+	                 CONV_2D	           33.192	    1.079	    1.084	  2.299%	 72.714%	     0.000	        1	[bottleneck_11_1/projection/conv/add_fold]
+	                 CONV_2D	           34.276	    2.032	    2.043	  4.335%	 77.049%	     0.000	        1	[bottleneck_12_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           36.319	    0.487	    0.490	  1.039%	 78.088%	     0.000	        1	[bottleneck_12_1/dw/bn/bn/activation]
+	                 CONV_2D	           36.809	    1.495	    1.503	  3.189%	 81.277%	     0.000	        1	[bottleneck_12_1/projection/conv/add_fold]
+	                     ADD	           38.312	    0.051	    0.052	  0.110%	 81.387%	     0.000	        1	[bottleneck_12_1/residual/add]
+	                 CONV_2D	           38.364	    2.042	    2.037	  4.323%	 85.710%	     0.000	        1	[bottleneck_13_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           40.402	    0.126	    0.126	  0.268%	 85.979%	     0.000	        1	[bottleneck_13_1/dw/bn/bn/activation]
+	                 CONV_2D	           40.528	    0.709	    0.704	  1.495%	 87.473%	     0.000	        1	[bottleneck_13_1/projection/conv/add_fold]
+	                 CONV_2D	           41.233	    1.177	    1.169	  2.480%	 89.953%	     0.000	        1	[bottleneck_14_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           42.402	    0.163	    0.164	  0.348%	 90.301%	     0.000	        1	[bottleneck_14_1/dw/bn/bn/activation]
+	                 CONV_2D	           42.566	    0.925	    0.919	  1.950%	 92.251%	     0.000	        1	[bottleneck_14_1/projection/conv/add_fold]
+	                     ADD	           43.485	    0.018	    0.018	  0.039%	 92.290%	     0.000	        1	[bottleneck_14_1/residual/add]
+	                 CONV_2D	           43.504	    1.165	    1.167	  2.476%	 94.767%	     0.000	        1	[bottleneck_15_1/expansion/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	           44.671	    0.165	    0.165	  0.349%	 95.116%	     0.000	        1	[bottleneck_15_1/dw/bn/bn/activation]
+	                 CONV_2D	           44.836	    0.922	    0.924	  1.960%	 97.076%	     0.000	        1	[bottleneck_15_1/projection/conv/add_fold]
+	                     ADD	           45.760	    0.018	    0.018	  0.039%	 97.115%	     0.000	        1	[bottleneck_15_1/residual/add]
+	                 CONV_2D	           45.779	    1.106	    1.103	  2.340%	 99.455%	     0.000	        1	[conv1x1/bn/bn/activation]
+	         AVERAGE_POOL_2D	           46.882	    0.028	    0.027	  0.057%	 99.513%	     0.000	        1	[avg_1k/average_pooling2d/AvgPool]
+	         FULLY_CONNECTED	           46.909	    0.227	    0.226	  0.479%	 99.991%	     0.000	        1	[logits/dense/BiasAdd]
+	                 SOFTMAX	           47.135	    0.004	    0.004	  0.009%	100.000%	     0.000	        1	[logits/activation]
+
+============================== Top by Computation Time ==============================
+	             [node type]	          [start]	  [first]	 [avg ms]	     [%]	  [cdf%]	  [mem KB]	[times called]	[Name]
+	                 CONV_2D	            8.203	    6.123	    6.077	 12.896%	 12.896%	     0.000	        1	[bottleneck_2_1/expansion/bn/bn/activation]
+	                 CONV_2D	            0.000	    3.522	    3.519	  7.466%	 20.362%	     0.000	        1	[conv_pre1/bn/bn/activation]
+	       DEPTHWISE_CONV_2D	            3.519	    2.621	    2.626	  5.572%	 25.935%	     0.000	        1	[bottleneck_1_1/dw/bn/bn/activation]
+	                 CONV_2D	            6.145	    2.048	    2.057	  4.366%	 30.300%	     0.000	        1	[bottleneck_1_1/projection/conv/add_fold]
+	                 CONV_2D	           34.276	    2.032	    2.043	  4.335%	 34.635%	     0.000	        1	[bottleneck_12_1/expansion/bn/bn/activation]
+	                 CONV_2D	           38.364	    2.042	    2.037	  4.323%	 38.959%	     0.000	        1	[bottleneck_13_1/expansion/bn/bn/activation]
+	                 CONV_2D	           26.263	    1.823	    1.823	  3.869%	 42.828%	     0.000	        1	[bottleneck_7_1/expansion/bn/bn/activation]
+	                 CONV_2D	           16.089	    1.695	    1.703	  3.613%	 46.441%	     0.000	        1	[bottleneck_3_1/expansion/bn/bn/activation]
+	                 CONV_2D	           20.041	    1.705	    1.702	  3.612%	 50.053%	     0.000	        1	[bottleneck_4_1/expansion/bn/bn/activation]
+	                 CONV_2D	           36.809	    1.495	    1.503	  3.189%	 53.242%	     0.000	        1	[bottleneck_12_1/projection/conv/add_fold]
+
+Number of nodes executed: 58
+============================== Summary by node type ==============================
+	             [Node type]	  [count]	  [avg ms]	    [avg %]	    [cdf %]	  [mem KB]	[times called]
+	                 CONV_2D	       31	    38.796	    82.376%	    82.376%	     0.000	       31
+	       DEPTHWISE_CONV_2D	       15	     7.539	    16.008%	    98.384%	     0.000	       15
+	                     ADD	        9	     0.505	     1.072%	    99.456%	     0.000	        9
+	         FULLY_CONNECTED	        1	     0.225	     0.478%	    99.934%	     0.000	        1
+	         AVERAGE_POOL_2D	        1	     0.027	     0.057%	    99.992%	     0.000	        1
+	                 SOFTMAX	        1	     0.004	     0.008%	   100.000%	     0.000	        1
+
+Timings (microseconds): count=50 first=47120 curr=47053 min=46983 max=47299 avg=47125.8 std=70
+Memory (bytes): count=0
+58 nodes observed
+
+
