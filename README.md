@@ -1,8 +1,8 @@
-# mb3plus
-a better mb3 implementation for DSP
+# dukeNet
+a mobile vision model for DSP
 
 ## model description
-It's adapted from original MobileNetV3. We add the following modifications for Qualcomm Hexagon DSP.
+It's inspired by MobileNetv3. We add the following modifications for Qualcomm Hexagon DSP.
 + Remove all of the ‘fancy’ activations (e.g. Hard swish, ReLU6) which may either incompatible with hardware or induce significant accuracy drop after quantization.
 + Replace 5x5 depthwise separable convolutions with their 3x3 counterparts as they are not supported by the NNAPI.
 + Remove the final FC layer to reduce the number of parameters.
