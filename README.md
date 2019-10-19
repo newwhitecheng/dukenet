@@ -8,6 +8,15 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 + Remove the final FC layer to reduce the number of parameters.
 + Scale up the model by 1.4x to fully utilize the given computation budget.
 
+
+## Performance of Quantized models
+| Model  | Top-1 Accuracy (%)  | Top-5 Accuracy (%)  | Latency  |
+| DukeNet-1.4| 72.99               |          ?          | 16.8ms   |
+| DukeNet-1.4-quantized | 71.81    |          90.83      |  6.29ms  |
+| MobileNetV1-1.40-quantized      | ?        |                     |   ?      |
+| MobileNetV2-1.40-quantized      | ?        |                     |   ?      |
+
+
 ## Version
 **Alpha Release v1.0 (10/17)**
 + model folder: Model1017_71.7_6.39
