@@ -13,7 +13,7 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 | Model                     | Top-1 Accuracy (%) | Top-5 Accuracy (%) | \# Parameters | MACs     | Latency<sup>1</sup> |
 | ------------------------- | ------------------ | ------------------ | ------------- | -------- | ------- |
 | [DukeNet-1.4](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms/DukeNet-fp32.tflite)               | 73.00              | 91.38              | 3.96 M        | 410.33 M | 18.64ms |
-| [DukeNet-1.4-quantized]https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms/DukeNet-uint8.tflite     | 72.56              | 91.34              | 3.96 M        | 410.33 M | 6.20ms  |
+| [DukeNet-1.4-quantized](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms/DukeNet-uint8.tflite)     | 72.56              | 91.34              | 3.96 M        | 410.33 M | 6.20ms  |
 | MobileNetV3-1.0<sup>2</sup>          | 75.2              | N/A                | 5.4M          | 217M     | 570.84ms<sup>4</sup>|
 | MobileNetV3-1.0-quantized<sup>2</sup>| 73.9              | N/A                | 5.4M          | 217M     | 703.42ms<sup>4</sup>|
 | MobileNetV3-1.0-mini<sup>2</sup>          | 72.3         | N/A                | 3.9M          | 209M     | 19.89ms |
