@@ -41,13 +41,11 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 
 ## Version
 **Alpha Release v1.0 (10/21)**
-+ model folder: Model1017_71.7_6.39
++ Accuracy: 72.56%, Latency: 6.2ms (meet the requirements - >71% Top-1 on ImageNet, <7ms)
++ model folder: [DukeNet-1.4](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms)      
 + benchmark log on cpu
-+ benchmark log on dsp with nnapi enabled.
-+ note: meet the requirements - >71% Top-1 on ImageNet, <7ms
++ benchmark log on dsp with nnapi enabled
 
-**v1.1<sup>**
-+ coming soon
 
 ## team information
 + team name: foreverDuke
