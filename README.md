@@ -47,7 +47,7 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 + benchmark log on dsp with nnapi enabled
 + presentation [ppt slides](https://github.com/newwhitecheng/dukenet/blob/master/g3doc/dukenet_presentation.pptx)      
 
-## team information
+## Team Information
 + team name: foreverDuke
 + team member: Tunhou Zhang, Shiyu Li, Hsin-Pai Cheng
 
