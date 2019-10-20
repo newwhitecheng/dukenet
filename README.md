@@ -21,7 +21,7 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 |                           |                    |                    |               |          |         |
 
 <p align="center">
-<img src="g3doc/performance_comparison.png" alt="" width="250%">
+<img src="g3doc/performance_comparison.png" alt="" width="100%">
 </p>
 
 ## Version
