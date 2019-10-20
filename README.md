@@ -1,5 +1,5 @@
 # DukeNet
-a mobile vision model for DSP
+A mobile Vision Model for DSP
 
 ## model description
 It's inspired by MobileNetv3. We add the following modifications for Qualcomm Hexagon DSP.
@@ -21,11 +21,11 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 | MobileNetV2-1.4<sup>2</sup>            | 75.0            | 92.5               | 6.06M         | 582M     | 21.02ms |
 | MobileNetV2-1.0<sup>3</sup>           | 71.8            | 90.6               | 3.47M         | 300M     | 19.98ms |
 | MobileNetV2-1.0-quantized<sup>3</sup> | 70.8            | 89.9               | 3.47M         | 300M     | 5.95ms  |
-| MobileNetV1-1.0<sup>3</sup>           | 71.0            | 89.9               |               |          | 17.15ms |
-| MobileNetV1-1.0-quantized<sup>3</sup> | 70.0            | 89.0               |               |          | 5.19ms  |
-| MnasNet-0.75<sup>3</sup>              | 71.72           | 90.17              |               |          | 26.88ms |
-| MnasNet-1.0<sup>3</sup>               | 74.08           | 91.75              |               |          | 27.54ms |
-| MnasNet-1.3<sup>3</sup>               | 75.24           | 92.55              |               |          | 27.59ms |
+| MobileNetV1-1.0<sup>3</sup>           | 71.0            | 89.9               | 4.24M         | 569M     | 17.15ms |
+| MobileNetV1-1.0-quantized<sup>3</sup> | 70.0            | 89.0               | 4.24M         | 569M     | 5.19ms  |
+| MnasNet-0.75<sup>3</sup>              | 71.72           | 90.17              | 2.9M          | 227M     | 26.88ms |
+| MnasNet-1.0<sup>3</sup>               | 74.08           | 91.75              | 3.9M          | 315M     | 27.54ms |
+| MnasNet-1.3<sup>3</sup>               | 75.24           | 92.55              | N/A           | N/A      | 27.59ms |
 
 <sup>1</sup>All latencies are measured on LG G8 ThinQ using the [label image](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/examples/label_image) program provided by tensorflow lite examples with nnapi enabled, running on Hexgon 690 DSP. Each test run involves 50 warmup runs and 1000 runs whose average latency is listed.
 
