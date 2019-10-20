@@ -16,9 +16,17 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 | DukeNet-1.4-quantized     | 72.56              | 91.34              | 3.96 M        | 410.33 M | 6.29ms  |
 | MobileNetV3-1.0           | 75.2               | N/A                | 5.4M          | 219M     | ?       |
 | MobileNetV3-1.0-quantized | N/A                | N/A                | 5.4M          | 219M     |         |
-| MobileNetV2-1.4           |                    |                    |               |          |         |
-|                           |                    |                    |               |          |         |
-|                           |                    |                    |               |          |         |
+| MobileNetV2-1.4           | 75.0               | 92.5               | 6.06M         | 582M     | 21.02ms |
+| MobileNetV2-1.0           | 71.8               | 90.6               |               |          | 19.98ms |
+| MobileNetV2-1.0-quantized | 70.8               | 89.9               |               |          | 5.95ms  |
+| MobileNetV1-1.0           | 71.0               | 89.9               |               |          | 17.15ms |
+| MobileNetV1-1.0-quantized | 70.0               | 89.0               |               |          | 5.19ms  |
+| MnasNet-0.75              | 71.72              | 90.17              |               |          | 26.88ms |
+| MnasNet-1.0               | 74.08              | 91.75              |               |          | 27.54ms |
+| MnasNet-1.3               | 75.24              | 92.55              |               |          | 27.59ms |
+
+
+
 
 <p align="center">
 <img src="g3doc/performance_comparison.png">
