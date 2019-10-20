@@ -1,4 +1,4 @@
-# dukeNet
+# DukeNet
 a mobile vision model for DSP
 
 ## model description
@@ -20,13 +20,12 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 |                           |                    |                    |               |          |         |
 |                           |                    |                    |               |          |         |
 
-
-
-
-
+<p align="center">
+<img src="g3doc/performance_comparison.png" alt="" width="250%">
+</p>
 
 ## Version
-**Alpha Release v1.0 (10/17)**
+**Alpha Release v1.0 (10/21)**
 + model folder: Model1017_71.7_6.39
 + benchmark log on cpu
 + benchmark log on dsp with nnapi enabled.
