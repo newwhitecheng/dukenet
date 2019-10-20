@@ -45,7 +45,7 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 + model folder: [DukeNet-1.4](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms)      
 + benchmark log on cpu
 + benchmark log on dsp with nnapi enabled
-
++ presentation [ppt slides](https://github.com/newwhitecheng/dukenet/blob/master/g3doc/dukenet_presentation.pptx)      
 
 ## team information
 + team name: foreverDuke
