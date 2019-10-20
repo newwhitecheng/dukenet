@@ -1,7 +1,7 @@
 # DukeNet
 A mobile Vision Model for DSP
 
-## model description
+## Model Description
 It's inspired by MobileNetv3. We add the following modifications for Qualcomm Hexagon DSP.
 + Remove all of the ‘fancy’ activations (e.g. Hard swish, ReLU6) which may either incompatible with hardware or induce significant accuracy drop after quantization.
 + Replace 5x5 depthwise separable convolutions with their 3x3 counterparts as they are not supported by the NNAPI.
@@ -9,7 +9,7 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 + Scale up the model by 1.4x to fully utilize the given computation budget.
 
 
-## Performance of Quantized models
+## Performance of Quantized models and Floating-point models
 | Model                     | Top-1 Accuracy (%) | Top-5 Accuracy (%) | \# Parameters | MACs     | Latency<sup>1</sup> |
 | ------------------------- | ------------------ | ------------------ | ------------- | -------- | ------- |
 | [DukeNet-1.4](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms/DukeNet-fp32.tflite)               | 73.00              | 91.38              | 3.96 M        | 410.33 M | 18.64ms |
