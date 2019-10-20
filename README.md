@@ -1,5 +1,5 @@
 # DukeNet
-A mobile Vision Model for DSP
+A mobile Vision Model for DSP. The time constraint is <7ms on a Qualcomm Hexagon DSP.
 
 ## Model Description
 It's inspired by MobileNetv3. We add the following modifications for Qualcomm Hexagon DSP.
