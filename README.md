@@ -31,7 +31,7 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 
 <sup>2</sup>Pretrained Model, accuracy, MAC and Parameter data are from [https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet), 'mini' stands for minimalistic models, which have the same per-layer dimensions characteristic as MobilenetV3 while drop advanced blocks (squeeze-and-excite units, hard-swish, and 5x5 convolutions).
 
-<sup>3</sup>Pretrained Model, accuracy data are from [https://www.tensorflow.org/lite/guide/hosted_models](https://www.tensorflow.org/lite/guide/hosted_models),
+<sup>3</sup>Pretrained Model, accuracy data are from [https://www.tensorflow.org/lite/guide/hosted_models](https://www.tensorflow.org/lite/guide/hosted_models). Parameter and MAC count are from [https://github.com/tensorflow/tpu/tree/master/models/official/mnasnet](https://github.com/tensorflow/tpu/tree/master/models/official/mnasnet).
 
 <sup>4</sup>12.01ms on CPU for fp32 version, 11.98ms on CPU for uint8 version
 
