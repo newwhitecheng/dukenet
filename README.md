@@ -12,8 +12,8 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 ## Performance of Quantized models
 | Model                     | Top-1 Accuracy (%) | Top-5 Accuracy (%) | \# Parameters | MACs     | Latency |
 | ------------------------- | ------------------ | ------------------ | ------------- | -------- | ------- |
-| DukeNet-1.4               | 72.99              | ?                  | 3.96 M        | 410.33 M | 16.8ms  |
-| DukeNet-1.4-quantized     | 71.81              | 90.83              | 3.96 M        | 410.33 M | 6.29ms  |
+| DukeNet-1.4               | 73.00              | 91.38              | 3.96 M        | 410.33 M | 16.8ms  |
+| DukeNet-1.4-quantized     | 72.56              | 91.34              | 3.96 M        | 410.33 M | 6.29ms  |
 | MobileNetV3-1.0           | 75.2               | N/A                | 5.4M          | 219M     | ?       |
 | MobileNetV3-1.0-quantized | N/A                | N/A                | 5.4M          | 219M     |         |
 | MobileNetV2-1.4           |                    |                    |               |          |         |
