@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 # from matplotlib import gridspec
 net = ('DukeNet_1.4_224_quant', 'MobilenetV1_1.0_224_quant','MobilenetV2_1.0_224_quant', 'MobileNetV3-1.0-quant-mini')
-colors=['black', 'g', 'r', 'orange']
+colors=['blue', 'g', 'r', 'orange']
         # 'r', 'brown', 'orange', 'gold', 'slateblue', 'violet']
 # gs = gridspec.GridSpec(1, 2, width_ratios=[2, 3])
 
