@@ -40,13 +40,13 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 </p>
 
 ## Version
-<sup>2</sup>Alpha Release v1.0 (10/21)<sup>2</sup>
+**Alpha Release v1.0 (10/21)**
 + model folder: Model1017_71.7_6.39
 + benchmark log on cpu
 + benchmark log on dsp with nnapi enabled.
 + note: meet the requirements - >71% Top-1 on ImageNet, <7ms
 
-<sup>2</sup>v1.1<sup>2</sup>
+**v1.1<sup>**
 + coming soon
 
 ## team information
