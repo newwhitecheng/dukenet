@@ -44,7 +44,6 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 + Accuracy finetuned to 73.53% for fp32 model and 73.12 for quantized model.
 New model is going to be added soon.
 
-[Acc@Top1: 73.53, Acc@Top5: 91.75]
 
 **Alpha Release v1.0 (10/21)**
 + Accuracy: 72.56%, Latency: 6.2ms (meet the requirements - >71% Top-1 on ImageNet, <7ms)
