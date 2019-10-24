@@ -1,0 +1,346 @@
+Interpreter has 156 tensors and 59 nodes
+Inputs: 148
+Outputs: 149
+
+Tensor   0 avg_1k/average_pooling2d/AvgPool kTfLiteUInt8  kTfLiteArenaRw       1280 bytes ( 0.0 MB)  1 1 1 1280
+Tensor   1 bottleneck_10_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      50176 bytes ( 0.0 MB)  1 14 14 256
+Tensor   2 bottleneck_10_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1024 bytes ( 0.0 MB)  256
+Tensor   3 bottleneck_10_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       2304 bytes ( 0.0 MB)  1 3 3 256
+Tensor   4 bottleneck_10_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      50176 bytes ( 0.0 MB)  1 14 14 256
+Tensor   5 bottleneck_10_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1024 bytes ( 0.0 MB)  256
+Tensor   6 bottleneck_10_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      28672 bytes ( 0.0 MB)  256 1 1 112
+Tensor   7 bottleneck_10_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        448 bytes ( 0.0 MB)  112
+Tensor   8 bottleneck_10_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor   9 bottleneck_10_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      28672 bytes ( 0.0 MB)  112 1 1 256
+Tensor  10 bottleneck_10_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor  11 bottleneck_11_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     131712 bytes ( 0.1 MB)  1 14 14 672
+Tensor  12 bottleneck_11_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       2688 bytes ( 0.0 MB)  672
+Tensor  13 bottleneck_11_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       6048 bytes ( 0.0 MB)  1 3 3 672
+Tensor  14 bottleneck_11_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     131712 bytes ( 0.1 MB)  1 14 14 672
+Tensor  15 bottleneck_11_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       2688 bytes ( 0.0 MB)  672
+Tensor  16 bottleneck_11_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      75264 bytes ( 0.1 MB)  672 1 1 112
+Tensor  17 bottleneck_11_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        624 bytes ( 0.0 MB)  156
+Tensor  18 bottleneck_11_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      30576 bytes ( 0.0 MB)  1 14 14 156
+Tensor  19 bottleneck_11_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     104832 bytes ( 0.1 MB)  156 1 1 672
+Tensor  20 bottleneck_12_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     184240 bytes ( 0.2 MB)  1 14 14 940
+Tensor  21 bottleneck_12_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       3760 bytes ( 0.0 MB)  940
+Tensor  22 bottleneck_12_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       8460 bytes ( 0.0 MB)  1 3 3 940
+Tensor  23 bottleneck_12_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     184240 bytes ( 0.2 MB)  1 14 14 940
+Tensor  24 bottleneck_12_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       3760 bytes ( 0.0 MB)  940
+Tensor  25 bottleneck_12_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     146640 bytes ( 0.1 MB)  940 1 1 156
+Tensor  26 bottleneck_12_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        624 bytes ( 0.0 MB)  156
+Tensor  27 bottleneck_12_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      30576 bytes ( 0.0 MB)  1 14 14 156
+Tensor  28 bottleneck_12_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     146640 bytes ( 0.1 MB)  156 1 1 940
+Tensor  29 bottleneck_12_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      30576 bytes ( 0.0 MB)  1 14 14 156
+Tensor  30 bottleneck_13_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      46060 bytes ( 0.0 MB)  1 7 7 940
+Tensor  31 bottleneck_13_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       3760 bytes ( 0.0 MB)  940
+Tensor  32 bottleneck_13_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       8460 bytes ( 0.0 MB)  1 3 3 940
+Tensor  33 bottleneck_13_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     184240 bytes ( 0.2 MB)  1 14 14 940
+Tensor  34 bottleneck_13_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       3760 bytes ( 0.0 MB)  940
+Tensor  35 bottleneck_13_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     146640 bytes ( 0.1 MB)  940 1 1 156
+Tensor  36 bottleneck_13_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        896 bytes ( 0.0 MB)  224
+Tensor  37 bottleneck_13_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      10976 bytes ( 0.0 MB)  1 7 7 224
+Tensor  38 bottleneck_13_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     210560 bytes ( 0.2 MB)  224 1 1 940
+Tensor  39 bottleneck_14_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      65856 bytes ( 0.1 MB)  1 7 7 1344
+Tensor  40 bottleneck_14_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       5376 bytes ( 0.0 MB)  1344
+Tensor  41 bottleneck_14_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      12096 bytes ( 0.0 MB)  1 3 3 1344
+Tensor  42 bottleneck_14_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      65856 bytes ( 0.1 MB)  1 7 7 1344
+Tensor  43 bottleneck_14_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       5376 bytes ( 0.0 MB)  1344
+Tensor  44 bottleneck_14_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     301056 bytes ( 0.3 MB)  1344 1 1 224
+Tensor  45 bottleneck_14_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        896 bytes ( 0.0 MB)  224
+Tensor  46 bottleneck_14_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      10976 bytes ( 0.0 MB)  1 7 7 224
+Tensor  47 bottleneck_14_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     301056 bytes ( 0.3 MB)  224 1 1 1344
+Tensor  48 bottleneck_14_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      10976 bytes ( 0.0 MB)  1 7 7 224
+Tensor  49 bottleneck_15_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      65856 bytes ( 0.1 MB)  1 7 7 1344
+Tensor  50 bottleneck_15_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       5376 bytes ( 0.0 MB)  1344
+Tensor  51 bottleneck_15_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      12096 bytes ( 0.0 MB)  1 3 3 1344
+Tensor  52 bottleneck_15_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      65856 bytes ( 0.1 MB)  1 7 7 1344
+Tensor  53 bottleneck_15_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       5376 bytes ( 0.0 MB)  1344
+Tensor  54 bottleneck_15_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     301056 bytes ( 0.3 MB)  1344 1 1 224
+Tensor  55 bottleneck_15_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        896 bytes ( 0.0 MB)  224
+Tensor  56 bottleneck_15_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      10976 bytes ( 0.0 MB)  1 7 7 224
+Tensor  57 bottleneck_15_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     301056 bytes ( 0.3 MB)  224 1 1 1344
+Tensor  58 bottleneck_15_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      10976 bytes ( 0.0 MB)  1 7 7 224
+Tensor  59 bottleneck_1_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     551936 bytes ( 0.5 MB)  1 112 112 44
+Tensor  60 bottleneck_1_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo        176 bytes ( 0.0 MB)  44
+Tensor  61 bottleneck_1_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo        396 bytes ( 0.0 MB)  1 3 3 44
+Tensor  62 bottleneck_1_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo         96 bytes ( 0.0 MB)  24
+Tensor  63 bottleneck_1_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw     301056 bytes ( 0.3 MB)  1 112 112 24
+Tensor  64 bottleneck_1_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       1056 bytes ( 0.0 MB)  24 1 1 44
+Tensor  65 bottleneck_2_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     275968 bytes ( 0.3 MB)  1 56 56 88
+Tensor  66 bottleneck_2_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo        352 bytes ( 0.0 MB)  88
+Tensor  67 bottleneck_2_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo        792 bytes ( 0.0 MB)  1 3 3 88
+Tensor  68 bottleneck_2_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw    1103872 bytes ( 1.1 MB)  1 112 112 88
+Tensor  69 bottleneck_2_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        352 bytes ( 0.0 MB)  88
+Tensor  70 bottleneck_2_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       2112 bytes ( 0.0 MB)  88 1 1 24
+Tensor  71 bottleneck_2_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        128 bytes ( 0.0 MB)  32
+Tensor  72 bottleneck_2_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw     100352 bytes ( 0.1 MB)  1 56 56 32
+Tensor  73 bottleneck_2_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       2816 bytes ( 0.0 MB)  32 1 1 88
+Tensor  74 bottleneck_3_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     313600 bytes ( 0.3 MB)  1 56 56 100
+Tensor  75 bottleneck_3_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo        400 bytes ( 0.0 MB)  100
+Tensor  76 bottleneck_3_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo        900 bytes ( 0.0 MB)  1 3 3 100
+Tensor  77 bottleneck_3_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     313600 bytes ( 0.3 MB)  1 56 56 100
+Tensor  78 bottleneck_3_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        400 bytes ( 0.0 MB)  100
+Tensor  79 bottleneck_3_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       3200 bytes ( 0.0 MB)  100 1 1 32
+Tensor  80 bottleneck_3_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        128 bytes ( 0.0 MB)  32
+Tensor  81 bottleneck_3_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw     100352 bytes ( 0.1 MB)  1 56 56 32
+Tensor  82 bottleneck_3_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       3200 bytes ( 0.0 MB)  32 1 1 100
+Tensor  83 bottleneck_3_1/residual/add kTfLiteUInt8  kTfLiteArenaRw     100352 bytes ( 0.1 MB)  1 56 56 32
+Tensor  84 bottleneck_4_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      78400 bytes ( 0.1 MB)  1 28 28 100
+Tensor  85 bottleneck_4_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo        400 bytes ( 0.0 MB)  100
+Tensor  86 bottleneck_4_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo        900 bytes ( 0.0 MB)  1 3 3 100
+Tensor  87 bottleneck_4_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     313600 bytes ( 0.3 MB)  1 56 56 100
+Tensor  88 bottleneck_4_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        400 bytes ( 0.0 MB)  100
+Tensor  89 bottleneck_4_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       3200 bytes ( 0.0 MB)  100 1 1 32
+Tensor  90 bottleneck_4_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        224 bytes ( 0.0 MB)  56
+Tensor  91 bottleneck_4_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      43904 bytes ( 0.0 MB)  1 28 28 56
+Tensor  92 bottleneck_4_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       5600 bytes ( 0.0 MB)  56 1 1 100
+Tensor  93 bottleneck_5_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     131712 bytes ( 0.1 MB)  1 28 28 168
+Tensor  94 bottleneck_5_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo        672 bytes ( 0.0 MB)  168
+Tensor  95 bottleneck_5_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       1512 bytes ( 0.0 MB)  1 3 3 168
+Tensor  96 bottleneck_5_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     131712 bytes ( 0.1 MB)  1 28 28 168
+Tensor  97 bottleneck_5_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        672 bytes ( 0.0 MB)  168
+Tensor  98 bottleneck_5_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       9408 bytes ( 0.0 MB)  168 1 1 56
+Tensor  99 bottleneck_5_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        224 bytes ( 0.0 MB)  56
+Tensor 100 bottleneck_5_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      43904 bytes ( 0.0 MB)  1 28 28 56
+Tensor 101 bottleneck_5_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       9408 bytes ( 0.0 MB)  56 1 1 168
+Tensor 102 bottleneck_5_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      43904 bytes ( 0.0 MB)  1 28 28 56
+Tensor 103 bottleneck_6_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     131712 bytes ( 0.1 MB)  1 28 28 168
+Tensor 104 bottleneck_6_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo        672 bytes ( 0.0 MB)  168
+Tensor 105 bottleneck_6_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       1512 bytes ( 0.0 MB)  1 3 3 168
+Tensor 106 bottleneck_6_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     131712 bytes ( 0.1 MB)  1 28 28 168
+Tensor 107 bottleneck_6_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        672 bytes ( 0.0 MB)  168
+Tensor 108 bottleneck_6_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       9408 bytes ( 0.0 MB)  168 1 1 56
+Tensor 109 bottleneck_6_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        224 bytes ( 0.0 MB)  56
+Tensor 110 bottleneck_6_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      43904 bytes ( 0.0 MB)  1 28 28 56
+Tensor 111 bottleneck_6_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       9408 bytes ( 0.0 MB)  56 1 1 168
+Tensor 112 bottleneck_6_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      43904 bytes ( 0.0 MB)  1 28 28 56
+Tensor 113 bottleneck_7_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      65856 bytes ( 0.1 MB)  1 14 14 336
+Tensor 114 bottleneck_7_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1344 bytes ( 0.0 MB)  336
+Tensor 115 bottleneck_7_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       3024 bytes ( 0.0 MB)  1 3 3 336
+Tensor 116 bottleneck_7_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     263424 bytes ( 0.3 MB)  1 28 28 336
+Tensor 117 bottleneck_7_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1344 bytes ( 0.0 MB)  336
+Tensor 118 bottleneck_7_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      18816 bytes ( 0.0 MB)  336 1 1 56
+Tensor 119 bottleneck_7_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        448 bytes ( 0.0 MB)  112
+Tensor 120 bottleneck_7_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor 121 bottleneck_7_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      37632 bytes ( 0.0 MB)  112 1 1 336
+Tensor 122 bottleneck_8_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      54880 bytes ( 0.1 MB)  1 14 14 280
+Tensor 123 bottleneck_8_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1120 bytes ( 0.0 MB)  280
+Tensor 124 bottleneck_8_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       2520 bytes ( 0.0 MB)  1 3 3 280
+Tensor 125 bottleneck_8_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      54880 bytes ( 0.1 MB)  1 14 14 280
+Tensor 126 bottleneck_8_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1120 bytes ( 0.0 MB)  280
+Tensor 127 bottleneck_8_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      31360 bytes ( 0.0 MB)  280 1 1 112
+Tensor 128 bottleneck_8_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        448 bytes ( 0.0 MB)  112
+Tensor 129 bottleneck_8_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor 130 bottleneck_8_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      31360 bytes ( 0.0 MB)  112 1 1 280
+Tensor 131 bottleneck_8_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor 132 bottleneck_9_1/dw/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      50176 bytes ( 0.0 MB)  1 14 14 256
+Tensor 133 bottleneck_9_1/dw/conv_depthwise_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1024 bytes ( 0.0 MB)  256
+Tensor 134 bottleneck_9_1/dw/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       2304 bytes ( 0.0 MB)  1 3 3 256
+Tensor 135 bottleneck_9_1/expansion/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      50176 bytes ( 0.0 MB)  1 14 14 256
+Tensor 136 bottleneck_9_1/expansion/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       1024 bytes ( 0.0 MB)  256
+Tensor 137 bottleneck_9_1/expansion/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      28672 bytes ( 0.0 MB)  256 1 1 112
+Tensor 138 bottleneck_9_1/projection/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        448 bytes ( 0.0 MB)  112
+Tensor 139 bottleneck_9_1/projection/conv/add_fold kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor 140 bottleneck_9_1/projection/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo      28672 bytes ( 0.0 MB)  112 1 1 256
+Tensor 141 bottleneck_9_1/residual/add kTfLiteUInt8  kTfLiteArenaRw      21952 bytes ( 0.0 MB)  1 14 14 112
+Tensor 142 conv1x1/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw      62720 bytes ( 0.1 MB)  1 7 7 1280
+Tensor 143 conv1x1/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo       5120 bytes ( 0.0 MB)  1280
+Tensor 144 conv1x1/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo     286720 bytes ( 0.3 MB)  1280 1 1 224
+Tensor 145 conv_pre1/bn/bn/activation kTfLiteUInt8  kTfLiteArenaRw     551936 bytes ( 0.5 MB)  1 112 112 44
+Tensor 146 conv_pre1/conv/Conv2D_Fold_bias kTfLiteInt32   kTfLiteMmapRo        176 bytes ( 0.0 MB)  44
+Tensor 147 conv_pre1/conv/weights_quant/FakeQuantWithMinMaxVars kTfLiteUInt8   kTfLiteMmapRo       1188 bytes ( 0.0 MB)  44 3 3 3
+Tensor 148 input                kTfLiteUInt8  kTfLiteArenaRw     150528 bytes ( 0.1 MB)  1 224 224 3
+Tensor 149 logits/activation    kTfLiteUInt8  kTfLiteArenaRw       1001 bytes ( 0.0 MB)  1 1001
+Tensor 150 logits/dense/BiasAdd kTfLiteUInt8  kTfLiteArenaRw       1001 bytes ( 0.0 MB)  1 1001
+Tensor 151 logits/dense/MatMul_bias kTfLiteInt32   kTfLiteMmapRo       4004 bytes ( 0.0 MB)  1001
+Tensor 152 logits/dense/weights_quant/FakeQuantWithMinMaxVars/transpose kTfLiteUInt8   kTfLiteMmapRo    1281280 bytes ( 1.2 MB)  1001 1280
+Tensor 153 (null)               kTfLiteNoType  kTfLiteMemNone          0 bytes ( 0.0 MB)  (null)
+Tensor 154 (null)               kTfLiteNoType  kTfLiteMemNone          0 bytes ( 0.0 MB)  (null)
+Tensor 155 (null)               kTfLiteUInt8  kTfLiteArenaRw     338688 bytes ( 0.3 MB)  1 112 112 27
+
+Node   0 Operator Builtin Code   3 CONV_2D
+  Inputs: 148 147 146
+  Outputs: 145
+Node   1 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 145 61 60
+  Outputs: 59
+Node   2 Operator Builtin Code   3 CONV_2D
+  Inputs: 59 64 62
+  Outputs: 63
+Node   3 Operator Builtin Code   3 CONV_2D
+  Inputs: 63 70 69
+  Outputs: 68
+Node   4 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 68 67 66
+  Outputs: 65
+Node   5 Operator Builtin Code   3 CONV_2D
+  Inputs: 65 73 71
+  Outputs: 72
+Node   6 Operator Builtin Code   3 CONV_2D
+  Inputs: 72 79 78
+  Outputs: 77
+Node   7 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 77 76 75
+  Outputs: 74
+Node   8 Operator Builtin Code   3 CONV_2D
+  Inputs: 74 82 80
+  Outputs: 81
+Node   9 Operator Builtin Code   0 ADD
+  Inputs: 72 81
+  Outputs: 83
+Node  10 Operator Builtin Code   3 CONV_2D
+  Inputs: 83 89 88
+  Outputs: 87
+Node  11 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 87 86 85
+  Outputs: 84
+Node  12 Operator Builtin Code   3 CONV_2D
+  Inputs: 84 92 90
+  Outputs: 91
+Node  13 Operator Builtin Code   3 CONV_2D
+  Inputs: 91 98 97
+  Outputs: 96
+Node  14 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 96 95 94
+  Outputs: 93
+Node  15 Operator Builtin Code   3 CONV_2D
+  Inputs: 93 101 99
+  Outputs: 100
+Node  16 Operator Builtin Code   0 ADD
+  Inputs: 91 100
+  Outputs: 102
+Node  17 Operator Builtin Code   3 CONV_2D
+  Inputs: 102 108 107
+  Outputs: 106
+Node  18 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 106 105 104
+  Outputs: 103
+Node  19 Operator Builtin Code   3 CONV_2D
+  Inputs: 103 111 109
+  Outputs: 110
+Node  20 Operator Builtin Code   0 ADD
+  Inputs: 102 110
+  Outputs: 112
+Node  21 Operator Builtin Code   3 CONV_2D
+  Inputs: 112 118 117
+  Outputs: 116
+Node  22 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 116 115 114
+  Outputs: 113
+Node  23 Operator Builtin Code   3 CONV_2D
+  Inputs: 113 121 119
+  Outputs: 120
+Node  24 Operator Builtin Code   3 CONV_2D
+  Inputs: 120 127 126
+  Outputs: 125
+Node  25 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 125 124 123
+  Outputs: 122
+Node  26 Operator Builtin Code   3 CONV_2D
+  Inputs: 122 130 128
+  Outputs: 129
+Node  27 Operator Builtin Code   0 ADD
+  Inputs: 120 129
+  Outputs: 131
+Node  28 Operator Builtin Code   3 CONV_2D
+  Inputs: 131 137 136
+  Outputs: 135
+Node  29 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 135 134 133
+  Outputs: 132
+Node  30 Operator Builtin Code   3 CONV_2D
+  Inputs: 132 140 138
+  Outputs: 139
+Node  31 Operator Builtin Code   0 ADD
+  Inputs: 131 139
+  Outputs: 141
+Node  32 Operator Builtin Code   3 CONV_2D
+  Inputs: 141 6 5
+  Outputs: 4
+Node  33 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 4 3 2
+  Outputs: 1
+Node  34 Operator Builtin Code   3 CONV_2D
+  Inputs: 1 9 7
+  Outputs: 8
+Node  35 Operator Builtin Code   0 ADD
+  Inputs: 141 8
+  Outputs: 10
+Node  36 Operator Builtin Code   3 CONV_2D
+  Inputs: 10 16 15
+  Outputs: 14
+Node  37 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 14 13 12
+  Outputs: 11
+Node  38 Operator Builtin Code   3 CONV_2D
+  Inputs: 11 19 17
+  Outputs: 18
+Node  39 Operator Builtin Code   3 CONV_2D
+  Inputs: 18 25 24
+  Outputs: 23
+Node  40 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 23 22 21
+  Outputs: 20
+Node  41 Operator Builtin Code   3 CONV_2D
+  Inputs: 20 28 26
+  Outputs: 27
+Node  42 Operator Builtin Code   0 ADD
+  Inputs: 18 27
+  Outputs: 29
+Node  43 Operator Builtin Code   3 CONV_2D
+  Inputs: 29 35 34
+  Outputs: 33
+Node  44 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 33 32 31
+  Outputs: 30
+Node  45 Operator Builtin Code   3 CONV_2D
+  Inputs: 30 38 36
+  Outputs: 37
+Node  46 Operator Builtin Code   3 CONV_2D
+  Inputs: 37 44 43
+  Outputs: 42
+Node  47 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 42 41 40
+  Outputs: 39
+Node  48 Operator Builtin Code   3 CONV_2D
+  Inputs: 39 47 45
+  Outputs: 46
+Node  49 Operator Builtin Code   0 ADD
+  Inputs: 37 46
+  Outputs: 48
+Node  50 Operator Builtin Code   3 CONV_2D
+  Inputs: 48 54 53
+  Outputs: 52
+Node  51 Operator Builtin Code   4 DEPTHWISE_CONV_2D
+  Inputs: 52 51 50
+  Outputs: 49
+Node  52 Operator Builtin Code   3 CONV_2D
+  Inputs: 49 57 55
+  Outputs: 56
+Node  53 Operator Builtin Code   0 ADD
+  Inputs: 48 56
+  Outputs: 58
+Node  54 Operator Builtin Code   3 CONV_2D
+  Inputs: 58 144 143
+  Outputs: 142
+Node  55 Operator Builtin Code   1 AVERAGE_POOL_2D
+  Inputs: 142
+  Outputs: 0
+Node  56 Operator Builtin Code   9 FULLY_CONNECTED
+  Inputs: 0 152 151
+  Outputs: 150
+Node  57 Operator Builtin Code  25 SOFTMAX
+  Inputs: 150
+  Outputs: 149
+Node  58 Operator Custom Name TfLiteNnapiDelegate
+  Inputs: 2 3 5 6 7 9 12 13 15 16 17 19 21 22 24 25 26 28 31 32 34 35 36 38 40 41 43 44 45 47 50 51 53 54 55 57 60 61 62 64 66 67 69 70 71 73 75 76 78 79 80 82 85 86 88 89 90 92 94 95 97 98 99 101 104 105 107 108 109 111 114 115 117 118 119 121 123 124 126 127 128 130 133 134 136 137 138 140 143 144 146 147 148 151 152
+  Outputs: 149
+
+Applied NNAPI delegate.invoked
+average time: 6.29248 ms
+0.247059: 653 653:military uniform
+0.133333: 835 835:suit, suit of clothes
+0.054902: 907 907:Windsor tie
+0.0431373: 466 466:bulletproof vest
+0.0352941: 440 440:bearskin, busby, shako
