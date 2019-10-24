@@ -40,6 +40,10 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 </p>
 
 ## Version
+**Alpha Release v1.1 (10/21)
++ Accuracy finetuned to 73.53% for fp32 model. Quantized model coming soon.
+[Acc@Top1: 73.53, Acc@Top5: 91.75]
+
 **Alpha Release v1.0 (10/21)**
 + Accuracy: 72.56%, Latency: 6.2ms (meet the requirements - >71% Top-1 on ImageNet, <7ms)
 + model folder: [DukeNet-1.4](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms)      
