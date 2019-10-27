@@ -1,7 +1,3 @@
-# DukeNet 10/21 submission
-# uint8: 72.56/91.34
-# float: 73.00/91.39
-
 import numpy as np
 import matplotlib.pyplot as plt
 # from matplotlib import gridspec
@@ -13,7 +9,7 @@ colors=['blue', 'g', 'r', 'orange']
 scaling_size = 20
 
 Ours_latency = (6.29)
-Ours_Top1 = (72.56)
+Ours_Top1 = (73.12)
 Ours_Paras = np.array((3.87))*scaling_size
 
 MobileNet_v1_latency = (5.19)

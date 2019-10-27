@@ -41,8 +41,10 @@ It's inspired by MobileNetv3. We add the following modifications for Qualcomm He
 
 ## Version
 **Alpha Release v1.1 (10/24)**
++ [Model1024_73.12_6.29](https://github.com/newwhitecheng/dukenet/blob/master/Model1019_72.56_6.2ms) serve as the final submission. 
 + Accuracy finetuned to 73.53% for fp32 model and 73.12% for quantized model.
 Latency: 6.29ms.
++ Including floating point model, uint8 model and pass the script provided by host site.  
 
 
 **Alpha Release v1.0 (10/21)**
