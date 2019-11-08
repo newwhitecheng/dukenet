@@ -1,6 +1,6 @@
-# DukeNet
-2nd place solution for AI Acceleration Challenge at ICCV 2019 (DSP track)
-A mobile Vision Model for DSP. The time constraint is <7ms on a Qualcomm Hexagon DSP.
+# DukeNet 
+## 2nd place solution for AI Acceleration Challenge at LPIRC workshop at ICCV 2019 (DSP track)
+DukeNet is a mobile Vision Model for DSP. The time constraint is <7ms on a Qualcomm Hexagon DSP.
 
 ## Model Description
 It's inspired by MobileNetv3. We add the following modifications for Qualcomm Hexagon DSP.
