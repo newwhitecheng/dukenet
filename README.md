@@ -2,6 +2,14 @@
 ## 2nd place solution for AI Acceleration Challenge at LPIRC workshop at ICCV 2019 (DSP track)
 DukeNet is a mobile Vision Model for DSP. The time constraint is <7ms on a Qualcomm Hexagon DSP.
 
+## Competition result tested by the competition host at AI Acceleration Challenge. 
+The ranking rule is - within 7ms, compete the highest accuracy based on competition cite's holdout set. 
+
+| Rank | Team name  | Top-1 Accuracy | Latency(ms)|
+| -----| ---------- | -------------- | ---------- |
+| 1st  | MIT HAN LAB|  0.788         | 5.15       |
+| 2st  | foreverDuke|  0.778         | 4.67       |
+
 ## Model Description
 It's inspired by MobileNetv3. We add the following modifications for Qualcomm Hexagon DSP.
 + Remove all of the ‘fancy’ activations (e.g. Hard swish, ReLU6) which may either incompatible with hardware or induce significant accuracy drop after quantization.
